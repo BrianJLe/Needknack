@@ -1,0 +1,199 @@
+      <div id="headerwrap" id="home" name="home">
+        <div class="row">
+          <div class="headback col-lg-4">
+      <header class="clearfix">
+<h1>Find <b>Your</b> Knack</h1>
+<p class="headbacktext">Start searching for your knack.</p>
+                          <form action="<%= spaces_url %>" class="group" id="form" method="get">
+    <div class="form-group">
+      <%= tag "input", type: "text",
+                placeholder: "What? (Guitar, Dance, etc...)",
+                       name: "space_filters[title]",
+                      class: "form-control",
+                         id: "exampleInputEmail1" %>
+      </div>
+      <div class="form-group">
+      <%= tag "input", type: "text",
+                placeholder: "Where? (New York City, Boston, etc...)",
+                       name: "space_filters[city]",
+                      class: "form-control",
+                         id: "exampleInputPassword1" %>
+      </div>
+<input type="submit" value="Search" class="btn btn-default" id="search-button">
+
+    </form>
+        </header>     
+          </div>
+        </div>
+      </div><!-- /headerwrap -->
+
+    <div id="greywrap">
+      <h1>How It Works</H1>
+        <hr><br>
+      </hr>
+      <div class="row">
+        <div class="col-lg-4 callout">
+          <span class="icon icon-search"></span>
+          <h2>Explore</h2>
+          <p class="hiwtext">Search for people with unique skills around your area.</p>
+        </div><!-- col-lg-4 -->
+          
+        <div class="col-lg-4 callout">
+          <span class="icon icon-calendar"></span>
+          <h2>Reserve</h2>
+          <p class="hiwtext">Schedule a convenient time where both parties can meet. </p>
+        </div><!-- col-lg-4 --> 
+        
+        <div class="col-lg-4 callout">
+          <span class="icon icon-checkmark"></span>
+          <h2>Accomplish</h2>
+          <p class="hiwtext">Learn a new knack.</p>
+        </div><!-- col-lg-4 --> 
+      </div><!-- row -->
+    </div><!-- greywrap -->
+
+        <section class="section-divider textdivider divider2">
+      <div class="container">
+        <h1>Our Goal</h1>
+        <hr></hr>
+        <p class="ourgoaltext">Our hope is to create a place where people with skills or "knacks" are easily accessible through our interface, so we can get a ball rolling of people helping, teaching, and learning new skills to others.</p>
+      </div><!-- container -->
+    </section><!-- section -->
+
+
+    <div class="container" id="team" name="team">
+    <br>
+      <div class="row white centered">
+        <h1 class="centered">The Team</h1>
+        <hr>
+        <br>
+        <br>
+        <div class="col-lg-4 centered">
+          <img class="img img-circle" src="assets/brianpro.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Brian Le</b></h4>
+          <p class="lessmargin">Co-founder, Software Engineer</p>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Under beast, that their that made us created whales without own let saying under, land land meat. Had behold. Gathered hath of. First creeping isn't every abundantly saw.</p>
+        </div><!-- col-lg-3 -->
+        
+        <div class="col-lg-4 centered">
+          <img class="img img-circle" src="assets/danpro.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Dan Flores</b></h4>
+          <p class="lessmargin">Co-founder, Application Developer</p>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Give night. Man signs place. Beginning don't. After darkness subdue beginning without beginning bearing. Morning. Thing bring for had made abundantly seas she'd and herb forth fruit above image whose multiply place was rule. Darkness green.</p>
+        </div><!-- col-lg-3 -->
+        
+        <div class="col-lg-4 centered">
+          <img class="img img-circle" src="assets/anthonypro.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Anthony Tran</b></h4>
+          <p class="lessmargin">Lead Front-End Developer</p>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Dry female their isn't, divided god be bring he. Blessed days in they're fruit give stars meat may seasons greater be days own second said firmament won't creeping lights was creature Image his. Every god them.</p>
+        </div><!-- col-lg-3 -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+    <div id="footerwrap">
+      <div class="container">
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-google-plus"></a>
+      </div>
+    </div>
+
+
+<!--    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Find <b>Your</b> Knack</h1>
+                          <form action="<%= spaces_url %>" class="group" id="form" method="get">
+    <div class="form-group">
+      <%= tag "input", type: "text",
+                placeholder: "What? (Guitar, Dance, etc...)",
+                       name: "space_filters[title]",
+                      class: "form-control",
+                         id: "exampleInputEmail1" %>
+      </div>
+      <div class="form-group">
+      <%= tag "input", type: "text",
+                placeholder: "Where? (New York City, Boston, etc...)",
+                       name: "space_filters[city]",
+                      class: "form-control",
+                         id: "exampleInputPassword1" %>
+      </div>
+<input type="submit" value="Search" class="btn btn-default" id="search-button">
+
+    </form>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Footer -->
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+
+<!--<div class="site-wrapper">
+  <img src="<!%= Space.random_space_with_photo.url %>" id="splash">
+
+  <div class="site-wrapper-inner" id="root-page-search-bar-container">
+    <h1><%= link_to "How Does it work?", pages_howitworks_path, method: :get, id: ".howitworks" %></h1>
+    <h3>Find a knack wherever you go.</h3>
+    <form action="<%= spaces_url %>" class="group" id="root-page-search-bar" method="get">
+
+      <%= tag "input", type: "text",
+                placeholder: "What? ()",
+                       name: "space_filters[title]",
+                      class: "text-input input-large",
+                         id: "root-input-title-name" %>
+      <%= tag "input", type: "text",
+                placeholder: "Where? (Boston,MA)",
+                       name: "space_filters[city]",
+                      class: "text-input input-large",
+                         id: "root-input-city-name" %>
+ 
+
+
+      <input type="submit" value="Search" class="button blue input-large" id="search-button">
+
+    </form>
+
+  <body><br><br><br><br><br><br><br>
+  Knack noun \nak\</br>
+  an ability, talent, or special skill needed to do something.
+  </body>
+  </div>
+</div>-->

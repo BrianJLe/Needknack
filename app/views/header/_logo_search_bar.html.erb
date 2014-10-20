@@ -1,0 +1,15 @@
+<nav class="group" id="logo-banner">
+	<ul>
+
+		<li>
+			<%= link_to image_tag("/assets/NK_Square_Logo.png", :style => "width: 40px; height: 40px;"), root_url %>
+			<%= link_to "needknack", root_url, method: :get, id: "site-logo" %>
+		</li>
+
+		<li>
+			<%= render "header/header_search_bar" %>
+
+		</li>
+
+	</ul>
+</nav>

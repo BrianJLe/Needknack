@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NEEDKNACK</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link rel="shortcut icon" href="/assets/nkicon.ico">
+
+
+  <%= csrf_meta_tags %>
+  <%= yield :head %>
+</head>
+<body>
+
+  <%= render "header/header" %>
+
+  <% if flash[:errors] || flash[:notices] %>
+    <div class="group" id='errors-notices'>
+      <%= render "header/flash_errors" %>
+      <%= render "header/flash_notices" %>
+    </div>
+  <% end %>
+
+  <!--Displays Log In errors-->
+  <%- flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+  <%- end -%>  
+  
+
+  <% unless params[:controller] == "root" %>
+
+      <%= yield %>
+
+  <% else %>
+      <%= yield %>
+  <% end %>
+
+</body>
+</html>
