@@ -11,6 +11,8 @@ gem 'bootstrap-sass', '~> 3.2.0'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails'
+  gem "compass", "~> 0.12.1"
 end
 
 group :development do
